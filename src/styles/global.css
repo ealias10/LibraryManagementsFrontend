@@ -1,0 +1,469 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #f9f9f9;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+td {
+  vertical-align: middle;
+}
+
+.waiting {
+  background: #fef8e5;
+  border-radius: 4px;
+  width: 124px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.waiting span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #ffc542;
+}
+.yellowLine > .ant-timeline-item-tail {
+  border-color: #ffc542 !important;
+}
+.greenLine > .ant-timeline-item-tail {
+  border-color: #03ad87 !important;
+}
+.redLine > .ant-timeline-item-tail {
+  border-color: #e50707 !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.excluded-users-error-color {
+  color: #e50707;
+}
+
+.add-new-button {
+  width: 140px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #0062ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0062ff;
+  cursor: pointer;
+}
+
+.text-blue-500-custom {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0062ff;
+}
+
+.align-center-custom {
+  display: flex;
+  align-items: center;
+}
+
+.alignCenterCustom {
+  display: flex;
+  align-items: center;
+  color: #e50707;
+}
+
+.no-users-fixed-height {
+  min-height: calc(100vh - 503px);
+}
+
+.button-group-custom {
+  text-align: center;
+  width: 112px;
+  height: 56px;
+}
+
+.button-group-custom .active {
+  background: #eff8ff;
+  border: 1px solid #0062ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #0062ff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-group-custom .inactive {
+  background: #fff;
+  border: 1px solid #d5d5dc;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #d5d5dc;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.disabled {
+  background: #f1f1f5;
+  border: 1px solid #d5d5dc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.statusDate .ant-picker-dropdown {
+  left: 230px !important;
+  top: 40px !important;
+}
+
+.statusDate .ant-picker-input {
+  background: #ffffff;
+  border: 1px solid #d5d5dc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.spinner {
+  height: 100px;
+  width: 100px;
+  background: url(../../public/spinner.gif);
+  background-position: center;
+  margin-top: 50px;
+}
+
+.spinnerContainer {
+  background: #f2faff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.spinnerText {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  margin-top: 12px;
+}
+
+.spinnerHeader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  margin-top: 56px;
+}
+
+.vertical .containerRadioCustom {
+  display: block;
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
+  line-height: 19px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.containerRadioCustom {
+  display: block;
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
+  line-height: 19px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.containerRadioCustom input:disabled {
+  cursor: not-allowed;
+}
+
+.containerRadioCustom input:disabled ~ .checkmark {
+  background: #dbdbdb;
+  cursor: not-allowed;
+}
+
+/* Hide the browser's default radio button */
+.containerRadioCustom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  background: #dbdbdb;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 28px;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+/* On mouse-over, add a fff background color */
+.containerRadioCustom:hover input:not(:checked) ~ .checkmark {
+  background-color: #fff;
+}
+/* On mouse-over, add a ccc background color */
+.containerRadioCustom:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.containerRadioCustom:hover input:disabled ~ .checkmark {
+  background: #dbdbdb;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadioCustom input:checked ~ .checkmark {
+  background-color: #0062ff;
+}
+
+.containerRadioCustom input:not(:checked) ~ .checkmark {
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadioCustom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerRadioCustom input:not(:checked) ~ .checkmark:after {
+  display: block;
+}
+
+.containerRadioCustom input:disabled ~ .checkmark:after {
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadioCustom .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.applicationDiscription {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #8d8d8d;
+}
+
+.rangerPickerCustomFooter {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #8d8d8d;
+  padding: 15px 0;
+}
+
+.editPersonalInfoHeader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  padding: 30px 0;
+}
+
+input[type="text"]:disabled {
+  background: #f1f1f5;
+  cursor: not-allowed;
+}
+
+.z-99999 {
+  z-index: 99999;
+}
+
+
+.download-toast .Toastify__toast--success {
+  background: #03ad87;
+}
+
+.verticaldivider {
+  border: 1px solid #d4d4d4;
+  transform: rotate(90deg);
+  width: 48px;
+}
+
+.bgWhite {
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #e2e2ea;
+}
+
+.w-275 {
+  min-width: 225px;
+}
+
+.w-128 {
+  min-width: 128px;
+}
+
+.bulkactionConatiner {
+  width: 280px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1),
+    0px 10px 10px rgba(0, 0, 0, 0.04);
+}
+
+@-moz-keyframes LoadingIndicator {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes LoadingIndicator {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes LoadingIndicator {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.w-756 {
+  width: 756px;
+}
+
+.bulkActionTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #171717;
+}
+
+.bulkActionDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #737373;
+}
+
+.kyc-modal-video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  z-index: -100;
+}
+
+button.bg_color_kyc[disabled] {
+  background-color: rgb(146, 188, 236);
+  color: rgb(243, 241, 241);
+}
+
+.imagecontainerHeight {
+  height: 93%;
+}
+
+.download-toast .Toastify__toast--success {
+  background: #03ad87;
+}
+
+.verticaldivider {
+  border: 1px solid #d4d4d4;
+  transform: rotate(90deg);
+  width: 48px;
+}
+
+.bgWhite {
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #e2e2ea;
+}
+
+.w-275 {
+  min-width: 225px;
+}
+
+.w-128 {
+  min-width: 128px;
+}
+
+.w-756 {
+  width: 756px;
+}
+
+#nextButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#prevButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

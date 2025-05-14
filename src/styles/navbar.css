@@ -1,0 +1,131 @@
+.navbar {
+  height: 100vh;
+  width: 300px;
+  background: white;
+}
+.selector {
+  height: 32px;
+  width: 3px;
+  background: url(../../public/Selector.svg);
+}
+.home {
+  height: 24px;
+  width: 24px;
+  background: url(../../public/home.svg);
+}
+.userbtn {
+  margin-top: 46px;
+}
+.buttons-setting {
+  align-items: center;
+}
+
+.drop-down {
+  position: absolute;
+  right: 20px;
+}
+
+.merchant-info {
+  height: 24px;
+  width: 24px;
+  background: url(../../public/merchant-info.svg);
+}
+
+.user-info {
+  height: 24px;
+  width: 24px;
+  background: url(../../public/manager-icon.svg);
+}
+
+.logo {
+  height: 28px;
+  width: 28px;
+  margin-bottom: 60px;
+  background: url(../../public/Logo.jpg);
+}
+
+.logout {
+  height: 24px;
+  width: 24px;
+  background: url(../../public/logout.svg);
+}
+
+.hovercursor:hover {
+  cursor: pointer;
+  filter: invert(0%) sepia(50%) saturate(1000000%) hue-rotate(245deg)
+    brightness(206%) contrast(89%);
+}
+
+.enabled {
+  /* filter: invert(40%) sepia(100%) saturate(2029%) hue-rotate(184deg) brightness(97%) contrast(114%); */
+  filter: invert(0%) sepia(50%) saturate(1000000%) hue-rotate(245deg)
+    brightness(206%) contrast(89%);
+}
+
+.textEnabled {
+  color: #0062ff;
+}
+
+.closeNavIcon {
+  height: 28px;
+  width: 28px;
+  margin-bottom: 60px;
+  background: url(../../public/Sidebar.svg);
+}
+.openNavIcon {
+  height: 18px;
+  width: 18px;
+  margin-bottom: 60px;
+  background: url(../../public/SidebarRight.svg);
+  visibility: visible;
+  transition: visibility 1000ms;
+  margin: 7px 1rem 3px 1.5rem;
+}
+.openSideNav {
+  width: 18vw;
+  cursor: pointer;
+}
+.closeSideNav {
+  width: 65px !important;
+  cursor: pointer;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  z-index: 8;
+}
+
+.hideNavIcon {
+  height: 28px;
+  width: 28px;
+  background: url(../../public/SidebarRight.svg);
+  visibility: hidden;
+}
+.headingStyle {
+  width: 11vw;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+.optionSpace {
+  padding-top: 2.1rem;
+}
+.searchWidth {
+  width: 38%;
+}
+.navFont {
+  font-size: 15px;
+  font-weight: 700;
+}
+.navSubTextFont {
+  font-size: 15px;
+  font-weight: 400;
+}
+.z-index-zero {
+  z-index: 0;
+}

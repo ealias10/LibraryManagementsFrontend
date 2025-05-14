@@ -1,0 +1,293 @@
+.dashboard-verify {
+	background: #0091ff;
+	border-radius: 4px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: white;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.dashboard-verify:hover {
+	background: #0089ff;
+}
+
+.disabled {
+	cursor: not-allowed;
+	background: #bdbdbd;
+}
+
+.disabled:hover {
+	cursor: not-allowed;
+	background: #dbdbdb;
+}
+
+/* .rejected{
+    cursor: not-allowed;
+    background: #FFEEEE;
+    color: #E50707;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+    background: #ffdbdb;
+} */
+
+.dashboard-reject {
+	background: #ffffff;
+	border: 1px solid #dbdbdb;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	color: #e50707;
+}
+
+.dashboard-reject:hover {
+	background: #f9f9f9;
+}
+
+button.button_disable[disabled] {
+	background-color: rgb(146, 188, 236);
+	color: rgb(243, 241, 241);
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	/* width: 120px; */
+	background-color: #171725;
+	color: #fff;
+	padding: 5px 2px;
+	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+	border-radius: 4px;
+	/* text-align: center;
+    border-radius: 6px;
+    padding: 5px 0; */
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltip .toolmain {
+	visibility: hidden;
+	/* width: 120px; */
+	background-color: #171725;
+	color: #fff;
+	padding: 5px 2px;
+	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+	border-radius: 4px;
+	/* text-align: center;
+      border-radius: 6px;
+      padding: 5px 0; */
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .toolmain {
+	visibility: visible;
+}
+
+.dashboard-retry {
+	background: #0091ff;
+	border-radius: 4px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: white;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.dashboard-retry:hover {
+	background: #0089ff;
+}
+
+.detail-page-info-tab {
+	width: 1164px;
+}
+
+.detail-page-booking-info {
+	min-width: 1200px;
+}
+button.pagination[disabled] {
+	background-color: rgb(255, 255, 255);
+	color: #b5b5be;
+}
+
+div.search-box:focus-within {
+	border-color: blue;
+	font-weight: bold;
+}
+
+.input_disabled {
+	background: #f1f1f5;
+	border: 1px solid #d5d5dc;
+}
+
+.transaction_completed {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	color: #03ad87;
+	padding-left: 5px;
+	font-family: "Roboto";
+}
+
+.transaction_pending {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	color: #d1a849;
+	padding-left: 5px;
+	font-family: "Roboto";
+}
+
+.transaction_Expired {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	color: #dc2626;
+	padding-left: 5px;
+	font-family: "Roboto";
+}
+
+.edit-button {
+	background: #3d6ef5;
+	border-radius: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	width: 85px;
+	text-align: center;
+}
+
+.add-fraction-button {
+	background: #3d6ef5;
+	border-radius: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	width: 145px;
+	text-align: center;
+}
+
+.create-tour-availability {
+	background: #3d6ef5;
+	border-radius: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	width: 195px;
+	text-align: center;
+}
+
+.delete-button {
+	background: #f75a5a;
+	border-radius: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	margin-right: 20px;
+	width: 85px;
+	text-align: center;
+}
+
+.delete-button:hover {
+	background: #cf0d0dd7;
+}
+
+.edit-button:hover {
+	background: #1734b8d7;
+}
+.table-minimum-width {
+	min-height: 768px;
+}
+.pagination-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px; /* Add some padding to give some space between the pagination and the bottom of the viewport */
+	background-color: #ffffff; /* Optionally, you can add a background color for the pagination container */
+	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optionally, add a box shadow to separate the pagination from the content */
+}
+
+.table-container {
+	position: relative;
+}
+
+.table-header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: #fff;
+}
+.table-height {
+	height: 560px;
+}
+.table-header-space {
+	max-width: 130px;
+}
+
+.pagination-button[disabled] {
+	opacity: 0.5;
+	color: gray;
+	cursor: not-allowed;
+}
+
+.search-filed {
+	width: 390px;
+}
+.custom-select .ant-select-selection-placeholder {
+	font-size: 14px;
+	color: rgb(162, 155, 155);
+}
+.property-modal {
+	min-height: 750px;
+	/* padding-right: 6px; */
+}
+.property-modal-content {
+	height: 650px;
+	overflow-y: auto;
+}
+
+
+.property-modal-content::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+.property-modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+   padding: 10px;
+}
+
+.property-modal-content::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+.property-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
+}
